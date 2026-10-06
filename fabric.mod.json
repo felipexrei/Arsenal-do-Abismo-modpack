@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "arsenal",
+  "version": "${version}",
+  "name": "Arsenal do Abismo",
+  "description": "Armas 3D com acessórios, 4 bosses, dimensões, estruturas, mineiros e a armadura mais forte.",
+  "authors": ["voce"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.arsenal.Arsenal"],
+    "client": ["dev.arsenal.client.ArsenalClient"]
+  },
+  "mixins": [{ "config": "arsenal.mixins.json", "environment": "client" }],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.4",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
